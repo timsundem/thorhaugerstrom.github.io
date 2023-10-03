@@ -2,8 +2,8 @@
 :root {
     --main-color1: #56004E;
     --main-color2: #C0D8C6;
-    --main-color3: #22272B;
-    --main-color4: #324410;
+    --main-color3: #FFD700;
+    --main-color4: #9B59B6;
     --white: #FFFFFF;
 }
 
@@ -37,6 +37,10 @@ body, h1, h2, h3, p, ul, li {
     background-color: var(--main-color2);
     color: var(--main-color1);
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .container {
@@ -72,8 +76,15 @@ body, h1, h2, h3, p, ul, li {
 }
 
 .nav-links a:hover {
-    color: var(--main-color2);
+    color: var(--main-color4);
 }
+
+/* Body */
+
+body {
+    padding-top: 47.5px;
+}
+
 
 
 /* Footer */
@@ -81,6 +92,8 @@ body, h1, h2, h3, p, ul, li {
     background-color: var(--main-color2);
     color: var(--main-color1);
     padding: 20px 0; 
+    position: relative;
+    margin-top: 0px;
 }
 
 /* Socials */
