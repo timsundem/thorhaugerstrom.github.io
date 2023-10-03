@@ -85,6 +85,10 @@ body {
     padding-top: 47.5px;
 }
 
+body h2 {
+    color: var(--main-color1);
+}
+
 
 
 /* Footer */
@@ -100,6 +104,8 @@ body {
 .social-icons {
     display: flex; 
     justify-content: center; 
+    align-items: center;
+    width: 100%;
 }
 
 .social-icons a {
