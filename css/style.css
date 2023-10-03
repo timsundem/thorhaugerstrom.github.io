@@ -97,6 +97,7 @@ body {
 
 body h2 {
     color: var(--main-color1);
+    font-weight: 400;
 }
 
 
