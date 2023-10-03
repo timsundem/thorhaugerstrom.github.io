@@ -132,6 +132,10 @@ body h2 {
     height: auto;
 }
 
+.project-card h3, p {
+    color: #333333
+}
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
