@@ -100,6 +100,61 @@ body h2 {
     font-weight: 400;
 }
 
+.section-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-section {
+    padding: 10px;
+}
+
+/* Projects */
+.project-cards-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between cards */
+    gap: 20px; /* Add space between cards */
+    padding: 0 30px;
+}
+
+.project-card {
+    flex: 0 0 calc(25% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px var(--main-color2);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color1);
+    color: var(--main-color2);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--main-color4);
+}
+
+
+/* Contact */
+/* Style for the embedded Google Form */
+iframe {
+    border: none; 
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-bottom: 20px;
+}
 
 
 /* Footer */
