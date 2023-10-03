@@ -26,13 +26,13 @@ h1, h2, h3 {
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Reset some default styles for consistency */
+/* Reset default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Style the navigation bar */
+/* Navbar */
 .navbar {
     background-color: var(--main-color2);
     color: var(--main-color1);
@@ -73,4 +73,27 @@ body, h1, h2, h3, p, ul, li {
 
 .nav-links a:hover {
     color: var(--main-color2);
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--main-color2);
+    color: var(--main-color1);
+    padding: 20px 0; 
+}
+
+/* Socials */
+.social-icons {
+    display: flex; 
+    justify-content: center; 
+}
+
+.social-icons a {
+    margin: 0 10px; 
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
 }
