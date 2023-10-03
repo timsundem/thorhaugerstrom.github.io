@@ -153,6 +153,17 @@ body h2 {
     margin: 10px;
 }
 
+@media (max-width: 768px) {
+    /* Styles for smaller screens */
+    .project-cards-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        flex: 0 0 100%; 
+    }
+}
+
 
 /* Contact */
 /* Style for the embedded Google Form */
