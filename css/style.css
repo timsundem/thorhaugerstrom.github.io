@@ -109,6 +109,12 @@ body h2 {
     padding: 10px;
 }
 
+/* Skills */
+.skills-icon {
+    height: 50px;
+    width: 50px;
+}
+
 /* Projects */
 .project-cards-container {
     display: flex;
@@ -163,6 +169,7 @@ body h2 {
         flex: 0 0 100%;
     }
 }
+
 
 
 /* Contact */
