@@ -91,6 +91,12 @@ body, h1, h2, h3, p, ul, li {
 
 /* Body */
 
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 body {
     padding-top: 47.5px;
 }
@@ -102,12 +108,20 @@ body h2 {
 
 .section-header {
     text-align: center;
-    padding: 20px;
+    padding: 100px 0;
 }
 
 .main-section {
     padding: 10px;
 }
+
+section {
+    margin-top: calc(50px + 10px); /* 10px extra space */
+    height: calc(100vh - 60px); /* 60px total (50px header height + 10px extra space) */
+    width: 100%;
+    transition: transform 0.25s; /* Adjust transition duration if needed */
+}
+
 
 /* Skills */
 .skills-icon {
