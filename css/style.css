@@ -94,7 +94,7 @@ body, h1, h2, h3, p, ul, li {
 body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body {
@@ -108,7 +108,7 @@ body h2 {
 
 .section-header {
     text-align: center;
-    padding: 100px 0;
+    padding: 46px 0 20px 0;
 }
 
 .main-section {
@@ -116,17 +116,49 @@ body h2 {
 }
 
 section {
-    margin-top: calc(50px + 10px); /* 10px extra space */
-    height: calc(100vh - 60px); /* 60px total (50px header height + 10px extra space) */
+    padding-top: 0; 
     width: 100%;
-    transition: transform 0.25s; /* Adjust transition duration if needed */
 }
+
+
 
 
 /* Skills */
 .skills-icon {
     height: 50px;
     width: 50px;
+}
+
+.skills-bars {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    flex-basis: calc(50% - 10px);  /* 50% to make it 2 skills per row and 10px for gap */
+}
+
+.skill-name {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--main-color1);
+}
+
+.skill-bar {
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--main-color2);
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--main-color4);
+    transition: width 1.2s ease-out;
 }
 
 /* Projects */
