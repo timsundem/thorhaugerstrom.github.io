@@ -9,3 +9,7 @@ projectCards.forEach(card => {
         card.style.backgroundColor = '#fff';
     });
 });
+
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });  
