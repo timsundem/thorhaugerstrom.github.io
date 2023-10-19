@@ -68,6 +68,11 @@ body, h1, h2, h3, p, ul, li {
     font-weight: normal;
 }
 
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Hero */
 .btn-1 {
     font-family: 'Quicksand', sans-serif;
