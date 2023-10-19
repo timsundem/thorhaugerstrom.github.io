@@ -2,8 +2,8 @@
 :root {
     --main-color1: #56004E;
     --main-color2: #C0D8C6;
-    --main-color3: #FFD700;
-    --main-color4: #9B59B6;
+    --main-color3: #F2F7F4;
+    --main-color4: #F7F2F6;
     --white: #FFFFFF;
 }
 
@@ -171,11 +171,11 @@ body h2 {
 
 .section-header {
     text-align: center;
-    padding: 46px 0 20px 0;
+    padding: 20px;
 }
 
 .main-section {
-    padding: 10px;
+    padding: 20px;
 }
 
 section {
@@ -187,10 +187,17 @@ section {
     min-height: 100vh;
 }
 
-
-
+/* About */
+.main-section.about-div {
+    background-color: var(--main-color3);
+    padding-top: 70px;
+}
 
 /* Skills */
+.main-section.skills-div {
+    background-color: var(--main-color3);
+}
+
 .skills-icon {
     height: 50px;
     width: 50px;
@@ -228,7 +235,16 @@ section {
     transition: width 1.2s ease-out;
 }
 
+/* Experience */
+.main-section.experience-div {
+    background-color: var(--main-color3);
+}
+
 /* Projects */
+.main-section.projects-div {
+    background-color: var(--main-color3);
+}
+
 .project-cards-container {
     display: flex;
     justify-content: space-between; /* Distribute space between cards */
@@ -287,12 +303,19 @@ section {
 
 /* Contact */
 /* Style for the embedded Google Form */
+.main-section.contact-div {
+    background-color: var(--main-color3);
+}
+
 iframe {
     border: none; 
     width: 100%; 
+    height: 800px;
     max-width: 800px; 
     margin: 0 auto; 
     margin-bottom: 20px;
+    overflow: hidden; /* Hide scrollbars */
+    display: block;
 }
 
 
