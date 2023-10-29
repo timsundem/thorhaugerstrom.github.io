@@ -84,14 +84,15 @@ html {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for depth */
-    text-transform: uppercase; /* Making the text uppercase for a modern look */
-    letter-spacing: 1px; /* Slightly spacing out letters for readability */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
 }
 
 .btn-1:hover {
-    background-color: var(--main-color4); /* Using your main color4 on hover */
-    transform: scale(1.05); /* Slightly enlarging the button on hover for interactive feedback */
+    background-color: var(--main-color4); 
+    color: var(--main-color1);
+    transform: scale(1.05); 
 }
 
 .btn-1:active {
@@ -103,6 +104,10 @@ html {
     text-decoration: none;
     color: var(--white);
     font-weight: 500;
+}
+
+.btn-1:hover a {
+    color: var(--main-color1);
 }
 
 /* Navbar */
