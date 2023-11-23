@@ -203,46 +203,28 @@ section {
     padding-top: 70px;
 }
 
-/* Skills */
-.main-section.skills-div {
-    background-color: var(--main-color3);
-}
-
-.skills-icon {
-    height: 50px;
-    width: 50px;
-}
-
-.skills-bars {
-    margin-top: 30px;
+.about-content {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
 }
 
-.skill {
-    flex-basis: calc(50% - 10px);  /* 50% to make it 2 skills per row and 10px for gap */
+.about-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* To make it a circular portrait */
+    object-fit: cover; /* To ensure the image fits properly */
 }
 
-.skill-name {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: var(--main-color1);
+.about-content p {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.skill-bar {
-    height: 20px;
-    border-radius: 10px;
-    background-color: var(--main-color2);
-    overflow: hidden;
-}
-
-.skill-level {
-    height: 100%;
-    border-radius: 10px;
-    background-color: var(--main-color4);
-    transition: width 1.2s ease-out;
+/* Skills */
+.main-section.skills-div {
+    background-color: var(--main-color3);
 }
 
 /* Experience */
@@ -278,24 +260,44 @@ section {
 }
 
 .project-card h3, p {
-    color: #333333
+    color: var(--main-color1)
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--main-color1);
-    color: var(--main-color2);
-    text-decoration: none;
+.btn-2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; /* Bold for better visibility */
+    background-color: var(--main-color2); /* Using your main color1 as the background */
+    color: var(--main-color1); /* Using your main color2 for the text color for contrast */
+    padding: 12px 24px; 
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    margin: 15px 5px 10px;
 }
 
-.btn:hover {
-    background-color: var(--main-color4);
+.btn-2:hover {
+    background-color: var(--main-color4); 
+    color: var(--main-color2);
+    transform: scale(1.05); 
 }
 
-.project-btn {
-    margin: 10px;
+.btn-2:active {
+    transform: scale(0.95); /* Slightly shrinking the button when clicked for interactive feedback */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Reducing the shadow a bit to mimic pressing */
+}
+
+.btn-2 a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.btn-2:hover a {
+    color: var(--main-color2);
 }
 
 @media (max-width: 768px) {
