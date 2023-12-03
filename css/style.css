@@ -232,6 +232,12 @@ section {
     background-color: var(--main-color3);
 }
 
+.resume-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Projects */
 .main-section.projects-div {
     background-color: var(--main-color3);
