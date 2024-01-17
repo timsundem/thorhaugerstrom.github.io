@@ -76,9 +76,9 @@ html {
 /* Hero */
 .btn-1 {
     font-family: 'Quicksand', sans-serif;
-    font-weight: 700; /* Bold for better visibility */
-    background-color: var(--main-color1); /* Using your main color1 as the background */
-    color: var(--main-color2); /* Using your main color2 for the text color for contrast */
+    font-weight: 700;
+    background-color: var(--main-color1);
+    color: var(--main-color2);
     padding: 12px 24px; 
     border-radius: 5px;
     border: none;
@@ -96,8 +96,8 @@ html {
 }
 
 .btn-1:active {
-    transform: scale(0.95); /* Slightly shrinking the button when clicked for interactive feedback */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Reducing the shadow a bit to mimic pressing */
+    transform: scale(0.95);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .btn-1 a {
@@ -125,7 +125,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure navbar is above all other content */
+    z-index: 1000;
 }
 
 .container {
@@ -212,8 +212,8 @@ section {
 .about-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* To make it a circular portrait */
-    object-fit: cover; /* To ensure the image fits properly */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .about-content p {
@@ -245,13 +245,18 @@ section {
 
 .project-cards-container {
     display: flex;
-    justify-content: space-between; /* Distribute space between cards */
-    gap: 20px; /* Add space between cards */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 30px;
 }
 
 .project-card {
-    flex: 0 0 calc(25% - 20px);
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
@@ -271,9 +276,9 @@ section {
 
 .btn-2 {
     font-family: 'Quicksand', sans-serif;
-    font-weight: 700; /* Bold for better visibility */
-    background-color: var(--main-color2); /* Using your main color1 as the background */
-    color: var(--main-color1); /* Using your main color2 for the text color for contrast */
+    font-weight: 700;
+    background-color: var(--main-color2);
+    color: var(--main-color1);
     padding: 12px 24px; 
     border-radius: 5px;
     border: none;
@@ -292,8 +297,8 @@ section {
 }
 
 .btn-2:active {
-    transform: scale(0.95); /* Slightly shrinking the button when clicked for interactive feedback */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Reducing the shadow a bit to mimic pressing */
+    transform: scale(0.95);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .btn-2 a {
@@ -307,7 +312,6 @@ section {
 }
 
 @media (max-width: 768px) {
-    /* Styles for smaller screens */
     .project-cards-container {
         flex-direction: column;
     }
@@ -332,7 +336,7 @@ iframe {
     max-width: 800px; 
     margin: 0 auto; 
     margin-bottom: 20px;
-    overflow: hidden; /* Hide scrollbars */
+    overflow: hidden;
     display: block;
 }
 
