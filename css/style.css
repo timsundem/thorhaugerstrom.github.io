@@ -164,6 +164,22 @@ html {
     color: var(--main-color4);
 }
 
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center-align text on mobile */
+    }
+
+    .nav-links {
+        justify-content: center; /* Center-align navigation links on mobile */
+    }
+
+    .nav-links li {
+        margin: 5px; /* Remove right margin on small screens */
+        margin-bottom: 10px; /* Add spacing between navigation links on mobile */
+    }
+}
+
 /* Body */
 
 body, html {
