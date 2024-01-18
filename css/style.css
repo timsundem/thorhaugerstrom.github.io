@@ -222,6 +222,19 @@ section {
     line-height: 1.5;
 }
 
+@media (max-width: 767px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    .about-image {
+        width: 100%; 
+        max-width: 150px; 
+        margin-bottom: 15px;
+    }
+}
+
 /* Skills */
 .main-section.skills-div {
     background-color: var(--main-color3);
@@ -315,9 +328,9 @@ section {
     .project-cards-container {
         flex-direction: column;
     }
-
     .project-card {
-        flex: 0 0 100%;
+        flex: 0 0 calc(100% - 20px);
+        max-width: calc(100% - 20px);
     }
 }
 
